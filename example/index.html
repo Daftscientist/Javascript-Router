@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Router</title>
+
     <script type="module">
-        import { Router, Route } from './router/src/router.js';
+        import { Route, Router } from '../router/router.js';
 
         document.addEventListener('DOMContentLoaded', () => {
             // choose the element where the views will be rendered
@@ -22,7 +23,8 @@
             const myRouter = new Router(
                 app, // DOM entry point
                 notFoundRoute, // 404 route
-                loadingRoute // loading route
+                loadingRoute, // loading route
+                "/example/" // base path
             );
 
             myRouter.addRoute(new Route('/', '/views/home.html', '/js/home.js', 'Home'));
