@@ -41,7 +41,7 @@ You can include the router directly from the CDN hosted at [https://leojohnston.
 
    ```javascript
    // Example navigation
-   myRouter.navigateTo('/about');
+   window.myRouter.navigateTo('/about');
    ```
 
 ### Example Usage
@@ -76,7 +76,8 @@ Here's a basic example of setting up and using the Pure JavaScript Router:
             myRouter.addRoute(aboutRoute);
 
             // Initial navigation
-            myRouter.navigateTo(window.location.pathname.replace(myRouter.baseUrl, ''));
+            myRouter.init();
+            window.myRouter = myRouter; // expose the router to the window object
         });
     </script>
 </body>
