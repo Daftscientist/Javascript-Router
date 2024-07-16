@@ -21,6 +21,10 @@ You can include the router directly from the CDN hosted at [https://leojohnston.
    ```html
    <script src="https://leojohnston.tech/cdn/javascript-router/router.min.js"></script>
    ```
+   OR
+   ```javascript
+   import { Route, Router } from 'https://leojohnston.tech/cdn/javascript-router/router.min.js';
+   ```
 
 2. **Define Routes**: Create instances of `Route` and add them to the router:
 
@@ -50,12 +54,13 @@ Here's a basic example of setting up and using the Pure JavaScript Router:
 <head>
     <meta charset="UTF-8">
     <title>My Pure JavaScript Router Example</title>
-    <script src="https://leojohnston.tech/cdn/javascript-router/router.min.js"></script>
 </head>
 <body>
     <div id="app"></div>
 
-    <script>
+    <script type="module">
+        import { Route, Router } from 'https://leojohnston.tech/cdn/javascript-router/router.min.js';
+
         document.addEventListener('DOMContentLoaded', () => {
             const app = document.getElementById('app');
             
