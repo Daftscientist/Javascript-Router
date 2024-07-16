@@ -8,7 +8,7 @@ To use the Pure JavaScript Router in your project, follow these steps:
 
 ### Using the CDN
 
-You can include the router directly from the CDN hosted at [https://leojohnston.me/cdn/javascript-router/_dist/router.min.js](https://leojohnston.me/cdn/javascript-router/_dist/router.min.jss) in your HTML file:
+You can include the router directly from the CDN hosted at [https://leojohnston.me/cdn/javascript-router/_dist/router.min.js](https://leojohnston.me/cdn/javascript-router/_dist/router.min.js) in your HTML file:
 
 ```html
 <script src="https://leojohnston.me/cdn/javascript-router/_dist/router.min.js"></script>
