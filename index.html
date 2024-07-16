@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Router</title>
+    <script type="module">
+        import { Router, Route } from './router/src/router.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const app = document.getElementById('app');
+
+            const notFoundRoute = new Route('/404', '/views/404.html', '/js/404.js', '404');
+            const loadingRoute = new Route('/loading', '/views/loading.html', '', 'Loading...');
+            const myRouter = new Router(app, notFoundRoute, loadingRoute);
+
+            myRouter.addRoute(new Route('/', '/views/home.html', '/js/home.js', 'Home'));
+            myRouter.addRoute(new Route('/dashboard', '/views/dashboard.html', '/js/dashboard.js', 'Dashboard'));
+
+            myRouter.navigateTo(myRouter.getCurrentPath());
+
+            // Example navigation
+            document.getElementById('home-link').addEventListener('click', () => {
+                myRouter.navigateTo('/');
+            });
+
+            document.getElementById('dashboard-link').addEventListener('click', () => {
+                myRouter.navigateTo('/dashboard');
+            });
+
+            document.getElementById('non-existent-link').addEventListener('click', () => {
+                myRouter.navigateTo('/non-existent');
+            });
+        });
+    </script>
+    <style>
+        nav a {
+            margin-right: 10px;
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a id="home-link">Home</a>
+        <a id="dashboard-link">Dashboard</a>
+        <a id="non-existent-link">Non-existent</a>
+    </nav>
+    <div id="app"></div>
+</body>
+</html>
