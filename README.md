@@ -8,10 +8,10 @@ To use the Pure JavaScript Router in your project, follow these steps:
 
 ### Using the CDN
 
-You can include the router directly from the CDN hosted at [https://leojohnston.me/cdn/javascript-router/_dist/router.min.js](https://leojohnston.me/cdn/javascript-router/_dist/router.min.js) in your HTML file:
+You can include the router directly from the CDN hosted at [https://leojohnston.live/cdn/javascript-router/_dist/router.min.js](https://leojohnston.live/cdn/javascript-router/_dist/router.min.js) in your HTML file:
 
 ```html
-<script src="https://leojohnston.me/cdn/javascript-router/_dist/router.min.js"></script>
+<script src="https://leojohnston.live/cdn/javascript-router/_dist/router.min.js"></script>
 ```
 
 ### Initializing the Router
@@ -19,7 +19,7 @@ You can include the router directly from the CDN hosted at [https://leojohnston.
 1. **Include the Router Script**: Ensure the router script is included in your HTML file before using it:
 
    ```html
-   <script src="https://leojohnston.me/cdn/javascript-router/_dist/router.min.js"></script>
+   <script src="https://leojohnston.live/cdn/javascript-router/_dist/router.min.js"></script>
    ```
 
 2. **Define Routes**: Create instances of `Route` and add them to the router:
@@ -50,7 +50,7 @@ Here's a basic example of setting up and using the Pure JavaScript Router:
 <head>
     <meta charset="UTF-8">
     <title>My Pure JavaScript Router Example</title>
-    <script src="https://leojohnston.me/cdn/javascript-router/_dist/router.min.js"></script>
+    <script src="https://leojohnston.live/cdn/javascript-router/_dist/router.min.js"></script>
 </head>
 <body>
     <div id="app"></div>
@@ -82,7 +82,7 @@ Here's a basic example of setting up and using the Pure JavaScript Router:
 
 Use the following CDN link to include the Pure JavaScript Router in your project:
 
-- [https://leojohnston.me/cdn/javascript-router/_dist/router.min.js](https://leojohnston.me/cdn/javascript-router/_dist/router.min.js)
+- [https://leojohnston.live/cdn/javascript-router/_dist/router.min.js](https://leojohnston.live/cdn/javascript-router/_dist/router.min.js)
 
 ## License
 
