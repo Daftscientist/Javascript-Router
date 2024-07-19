@@ -46,6 +46,11 @@ class Router {
         return this.removeBaseUrl(path); // Adjusted to remove baseUrl
     }
 
+    getCurrentRoute() {
+        const path = this.getCurrentPath();
+        return this.routes.find(route => route.path === path);
+    }
+
     isPathActive(path) {
         return this.getCurrentPath() === path;
     }
